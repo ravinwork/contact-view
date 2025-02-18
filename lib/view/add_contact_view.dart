@@ -56,6 +56,8 @@ class AddContactView extends GetView<ContactController> {
                     : AppString.valiePhoneText,
               ),
               SizedBox(height: 20),
+              Text(AppString.notePhoneNumberText),
+              SizedBox(height: 20),
               commonTextField(
                 controller: emailController,
                 title: AppString.enterEmailText,
@@ -63,8 +65,6 @@ class AddContactView extends GetView<ContactController> {
                     ? null
                     : AppString.validEmailText,
               ),
-              SizedBox(height: 20),
-              Text(AppString.notePhoneNumberText),
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {

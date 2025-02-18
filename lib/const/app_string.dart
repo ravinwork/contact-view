@@ -13,5 +13,5 @@ class AppString {
   static final valiePhoneText = 'Check your phone number';
   static final searchText = 'Search';
   static final notePhoneNumberText =
-      'Note: Please add the phone number in this formate (+1 (912) 123 4567).';
+      'Note: Please enter the phone number in this formate\n+1 (912) 123 4567.';
 }
