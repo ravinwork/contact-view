@@ -12,4 +12,6 @@ class AppString {
   static final validEmailText = 'Check your email address';
   static final valiePhoneText = 'Check your phone number';
   static final searchText = 'Search';
+  static final notePhoneNumberText =
+      'Note: Please add the phone number in this formate (+1 (912) 123 4567).';
 }

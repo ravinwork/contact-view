@@ -64,6 +64,8 @@ class AddContactView extends GetView<ContactController> {
                     : AppString.validEmailText,
               ),
               SizedBox(height: 20),
+              Text(AppString.notePhoneNumberText),
+              SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   if (_formKey.currentState?.validate() ?? false) {

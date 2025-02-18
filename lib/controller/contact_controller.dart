@@ -88,6 +88,16 @@ class ContactController extends GetxController {
       contactModel?.value?.contacts?.add(contactDetails);
       contactModel?.refresh();
     }
+    contactModel?.value?.contacts?.sort((a, b) {
+      // Score calculation: more recent interactions are weighted higher
+      int scoreA = a.interactionCount! * 2 +
+          (DateTime.now().difference(a.lastInteracted!).inDays * -1);
+      int scoreB = b.interactionCount! * 2 +
+          (DateTime.now().difference(b.lastInteracted!).inDays * -1);
+
+      return scoreB.compareTo(scoreA); // Sort descending
+    });
+    contactModel?.refresh();
     Get.back();
   }
 
